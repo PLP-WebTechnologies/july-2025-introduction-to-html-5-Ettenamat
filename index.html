@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Demo website showcasing semantic HTML5 structure with accessibility enhancements.">
+    <meta name="keywords" content="HTML5, accessibility, SEO, demo">
+    <meta name="author" content="Your Name">
+    <title>Demo Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to a CSS file for styles -->
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Our Demo Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#about" aria-label="About section">About</a></li>
+                <li><a href="#services" aria-label="Services section">Services</a></li>
+                <li><a href="#contact" aria-label="Contact section">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Us</h2>
+            <p>We are dedicated to providing quality services and enhancing user experience through semantic HTML and accessibility practices.</p>
+        </section>
+
+        <section id="services" aria-labelledby="services-heading">
+            <h2 id="services-heading">Our Services</h2>
+            <ul>
+                <li>Web Development</li>
+                <li>Accessibility Consulting</li>
+                <li>SEO Optimization</li>
+            </ul>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Us</h2>
+            <form action="#" method="post" aria-label="Contact Form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required aria-required="true">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required aria-required="true">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required aria-required="true"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+  <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
